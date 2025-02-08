@@ -38,6 +38,9 @@ const today = new Date();
 			>
 		</a>
 	</div>
+	<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+		Back to Top
+	</button>
 </footer>
 <style>
 	footer {
@@ -58,5 +61,18 @@ const today = new Date();
 	}
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
+	}
+	.back-to-top {
+		margin-top: 1em;
+		padding: 0.5em 1em;
+		background-color: var(--accent);
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 1em;
+	}
+	.back-to-top:hover {
+		background-color: var(--accent-dark);
 	}
 </style>
