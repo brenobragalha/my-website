@@ -39,11 +39,10 @@ coverage/
 # TypeScript output
 *.tsbuildinfo
 
-# Lock files for package managers (if you are using a specific one)
-# Uncomment the one you are using
-# yarn.lock
-# package-lock.json
-# pnpm-lock.yaml
+# Lock files for package managers
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
 
 # Other files to ignore
 *.log
