@@ -8,14 +8,16 @@ $color-scheme-dark: false !default;
 
 // Light mode
 $lm-brand-color:           #000000 !default;
-$lm-brand-color-light:     lighten($lm-brand-color, 40%) !default;
-$lm-brand-color-dark:      darken($lm-brand-color, 25%) !default;
+$lm-brand-color-light:     lighten($lm-brand-color, 90%) !default;
+$lm-brand-color-dark:      darken($lm-brand-color, 75%) !default;
 
 $lm-site-title-color:      $lm-brand-color-dark !default;
 
 $lm-text-color:            #000000 !default;
+$lm-text-color-light:      lighten($lm-text-color, 40%) !default;
 $lm-background-color:      #ffffff !default;
 $lm-code-background-color: #f7f7f7 !default;
+$lm-nav-background-color:  #f7f7f7 !default;
 
 $lm-link-base-color:       #3366ff !default;
 $lm-link-visited-color:    darken($lm-link-base-color, 15%) !default;
@@ -97,14 +99,16 @@ $lm-table-border-color:    $lm-border-color-01 !default;
 
 // Dark mode
 $dm-brand-color:           #ffffff !default;
-$dm-brand-color-light:     lighten($dm-brand-color, 5%) !default;
-$dm-brand-color-dark:      darken($dm-brand-color, 35%) !default;
+$dm-brand-color-light:     lighten($dm-brand-color, 44%) !default;
+$dm-brand-color-dark:      darken($dm-brand-color, 74%) !default;
 
 $dm-site-title-color:      $dm-brand-color-light !default;
 
 $dm-text-color:            #ffffff !default;
+$dm-text-color-dark:       darken($dm-text-color, 31%) !default;
 $dm-background-color:      #000000 !default;
 $dm-code-background-color: #161616 !default;
+$dm-nav-background-color:  #2a2a2a !default;
 
 $dm-link-base-color:       #0099ff !default;
 $dm-link-visited-color:    $dm-link-base-color !default;
@@ -196,8 +200,10 @@ $brand-color-dark: $lm-brand-color-dark;
 $site-title-color: $lm-site-title-color;
 
 $text-color: $lm-text-color;
+$text-color-light: $lm-text-color-light;
 $background-color: $lm-background-color;
 $code-background-color: $lm-code-background-color;
+$nav-background-color: $lm-nav-background-color;
 
 $link-base-color: $lm-link-base-color;
 $link-visited-color: $lm-link-visited-color;
@@ -222,8 +228,10 @@ $table-border-color: $lm-table-border-color;
     --skin-site-title-color: #{$lm-site-title-color};
 
     --skin-text-color: #{$lm-text-color};
+    --skin-text-color-light: #{$lm-text-color-light};
     --skin-background-color: #{$lm-background-color};
     --skin-code-background-color: #{$lm-code-background-color};
+    --skin-nav-background-color: #{$lm-nav-background-color};
 
     --skin-link-base-color: #{$lm-link-base-color};
     --skin-link-visited-color: #{$lm-link-visited-color};
@@ -251,8 +259,10 @@ $table-border-color: $lm-table-border-color;
       --skin-site-title-color: #{$dm-site-title-color};
 
       --skin-text-color: #{$dm-text-color};
+      --skin-text-color-light: #{$dm-text-color-dark};
       --skin-background-color: #{$dm-background-color};
       --skin-code-background-color: #{$dm-code-background-color};
+      --skin-nav-background-color: #{$dm-nav-background-color};
 
       --skin-link-base-color: #{$dm-link-base-color};
       --skin-link-visited-color: #{$dm-link-visited-color};
@@ -279,8 +289,10 @@ $table-border-color: $lm-table-border-color;
   $site-title-color: var(--skin-site-title-color);
 
   $text-color: var(--skin-text-color);
+  $text-color-light: var(--skin-text-color-light);
   $background-color: var(--skin-background-color);
   $code-background-color: var(--skin-code-background-color);
+  $nav-background-color: var(--skin-nav-background-color);
 
   $link-base-color: var(--skin-link-base-color);
   $link-visited-color: var(--skin-link-visited-color);
@@ -305,8 +317,10 @@ $table-border-color: $lm-table-border-color;
   $site-title-color: $dm-site-title-color;
 
   $text-color: $dm-text-color;
+  $text-color-light: $dm-text-color-dark;
   $background-color: $dm-background-color;
   $code-background-color: $dm-code-background-color;
+  $nav-background-color: $dm-nav-background-color;
 
   $link-base-color: $dm-link-base-color;
   $link-visited-color: $dm-link-visited-color;
