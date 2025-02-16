@@ -32,10 +32,28 @@ show_excerpts: true
 # * title     Tooltip rendered on hovering over icon.
 # * icon      Font Awesome icon id. `github` corresponds to `fa-github`.
 # * url       Full URL of social profile.
+# * icon_type Font Awesome icon type. `brands` corresponds to `fa-brands`.
 social_links:
   - title: GitHub
     icon: github
     url: "https://github.com/brenobragalha"
+    icon_type: brands
+  - title: X
+    icon: x-twitter
+    url: "https://x.com/brenobragalha"
+    icon_type: brands
+  - title: LinkedIn
+    icon: linkedin
+    url: "https://www.linkedin.com/in/"
+    icon_type: brands
+  - title: Mail
+    icon: envelope
+    url: "mailto:bragalhabreno.dev@icloud.com"
+    icon_type: solid
+  - title: RSS
+    icon: rss
+    url: "https://brenobragalha.github.io/feed.xml"
+    icon_type: solid
 
 # Skins
 #
