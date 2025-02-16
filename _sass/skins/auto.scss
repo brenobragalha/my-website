@@ -14,7 +14,7 @@ $lm-brand-color-dark:      darken($lm-brand-color, 75%) !default;
 $lm-site-title-color:      $lm-brand-color-dark !default;
 
 $lm-text-color:            #000000 !default;
-$lm-text-color-light:      lighten($lm-text-color, 40%) !default;
+$lm-meta-text-color:       #666666 !default;
 $lm-background-color:      #ffffff !default;
 $lm-code-background-color: #f7f7f7 !default;
 $lm-nav-background-color:  #f7f7f7 !default;
@@ -32,6 +32,8 @@ $lm-table-zebra-color:     lighten($lm-brand-color, 46%) !default;
 $lm-table-header-bg-color: lighten($lm-brand-color, 43%) !default;
 $lm-table-header-border:   lighten($lm-brand-color, 37%) !default;
 $lm-table-border-color:    $lm-border-color-01 !default;
+
+$lm-icon-color: #666666 !default;
 
 @mixin lm-highlight {
   .highlight {
@@ -105,7 +107,7 @@ $dm-brand-color-dark:      darken($dm-brand-color, 74%) !default;
 $dm-site-title-color:      $dm-brand-color-light !default;
 
 $dm-text-color:            #ffffff !default;
-$dm-text-color-dark:       darken($dm-text-color, 31%) !default;
+$dm-meta-text-color:       #b0b0b0 !default;
 $dm-background-color:      #000000 !default;
 $dm-code-background-color: #161616 !default;
 $dm-nav-background-color:  #2a2a2a !default;
@@ -123,6 +125,8 @@ $dm-table-zebra-color:     lighten($dm-background-color, 4%) !default;
 $dm-table-header-bg-color: lighten($dm-background-color, 10%) !default;
 $dm-table-header-border:   lighten($dm-background-color, 21%) !default;
 $dm-table-border-color:    $dm-border-color-01 !default;
+
+$dm-icon-color: #b0b0b0 !default;
 
 @mixin dm-highlight {
   .highlight {
@@ -200,7 +204,7 @@ $brand-color-dark: $lm-brand-color-dark;
 $site-title-color: $lm-site-title-color;
 
 $text-color: $lm-text-color;
-$text-color-light: $lm-text-color-light;
+$meta-text-color: $lm-meta-text-color;
 $background-color: $lm-background-color;
 $code-background-color: $lm-code-background-color;
 $nav-background-color: $lm-nav-background-color;
@@ -219,6 +223,8 @@ $table-header-bg-color: $lm-table-header-bg-color;
 $table-header-border: $lm-table-header-border;
 $table-border-color: $lm-table-border-color;
 
+$icon-color: $lm-icon-color;
+
 @if $color-scheme-auto {
   :root {
     --skin-brand-color: #{$lm-brand-color};
@@ -228,7 +234,7 @@ $table-border-color: $lm-table-border-color;
     --skin-site-title-color: #{$lm-site-title-color};
 
     --skin-text-color: #{$lm-text-color};
-    --skin-text-color-light: #{$lm-text-color-light};
+    --skin-meta-text-color: #{$lm-meta-text-color};
     --skin-background-color: #{$lm-background-color};
     --skin-code-background-color: #{$lm-code-background-color};
     --skin-nav-background-color: #{$lm-nav-background-color};
@@ -246,6 +252,8 @@ $table-border-color: $lm-table-border-color;
     --skin-table-header-bg-color: #{$lm-table-header-bg-color};
     --skin-table-header-border: #{$lm-table-header-border};
     --skin-table-border-color: #{$lm-table-border-color};
+
+    --skin-icon-color: #{$lm-icon-color};
   }
 
   @include lm-highlight;
@@ -259,7 +267,7 @@ $table-border-color: $lm-table-border-color;
       --skin-site-title-color: #{$dm-site-title-color};
 
       --skin-text-color: #{$dm-text-color};
-      --skin-text-color-light: #{$dm-text-color-dark};
+      --skin-meta-text-color: #{$dm-meta-text-color};
       --skin-background-color: #{$dm-background-color};
       --skin-code-background-color: #{$dm-code-background-color};
       --skin-nav-background-color: #{$dm-nav-background-color};
@@ -277,6 +285,8 @@ $table-border-color: $lm-table-border-color;
       --skin-table-header-bg-color: #{$dm-table-header-bg-color};
       --skin-table-header-border: #{$dm-table-header-border};
       --skin-table-border-color: #{$dm-table-border-color};
+
+      --skin-icon-color: #{$dm-icon-color};
     }
 
     @include dm-highlight;
@@ -289,7 +299,7 @@ $table-border-color: $lm-table-border-color;
   $site-title-color: var(--skin-site-title-color);
 
   $text-color: var(--skin-text-color);
-  $text-color-light: var(--skin-text-color-light);
+  $meta-text-color: var(--skin-meta-text-color);
   $background-color: var(--skin-background-color);
   $code-background-color: var(--skin-code-background-color);
   $nav-background-color: var(--skin-nav-background-color);
@@ -307,6 +317,8 @@ $table-border-color: $lm-table-border-color;
   $table-header-bg-color: var(--skin-table-header-bg-color);
   $table-header-border: var(--skin-table-header-border);
   $table-border-color: var(--skin-table-border-color);
+
+  $icon-color: var(--skin-icon-color);
 } @else if $color-scheme-dark {
 
   // Dark (always dark mode)
@@ -317,7 +329,7 @@ $table-border-color: $lm-table-border-color;
   $site-title-color: $dm-site-title-color;
 
   $text-color: $dm-text-color;
-  $text-color-light: $dm-text-color-dark;
+  $meta-text-color: $dm-meta-text-color;
   $background-color: $dm-background-color;
   $code-background-color: $dm-code-background-color;
   $nav-background-color: $dm-nav-background-color;
@@ -335,6 +347,8 @@ $table-border-color: $lm-table-border-color;
   $table-header-bg-color: $dm-table-header-bg-color;
   $table-header-border: $dm-table-header-border;
   $table-border-color: $dm-table-border-color;
+
+  $icon-color: $dm-icon-color;
 
   @include dm-highlight;
 } @else {
