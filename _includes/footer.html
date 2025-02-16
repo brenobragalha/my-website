@@ -1,6 +1,6 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ '/' | relative_url }}"></data>
-  
+
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col">
@@ -13,29 +13,29 @@
                 16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"
               />
             </svg>
-            
+
             <span>Subscribe</span>
           </a>
         </p>
-        
+
         {%- if site.author %}
           <ul class="contact-list">
             {% if site.author.name -%}
               <li class="p-name">{{ site.author.name | escape }}</li>
             {% endif -%}
-            
+
             {% if site.author.email -%}
               <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
             {%- endif %}
           </ul>
         {%- endif %}
       </div>
-      
+
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
       </div>
     </div>
-    
+
     <div class="social-links">
       {%- include social.html -%}
     </div>

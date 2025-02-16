@@ -75,19 +75,19 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $link-base-color;
   text-decoration: none;
-  
+
   &:visited {
     color: $link-visited-color;
   }
-  
+
   &:hover {
     color: $link-hover-color;
     text-decoration: underline;
   }
-  
+
   .social-media-list &:hover {
     text-decoration: none;
-    
+
     .username {
       text-decoration: underline;
     }
@@ -97,16 +97,16 @@ a {
 // Blockquotes
 blockquote {
   @include relative-font-size(1.125);
-  
+
   color: $brand-color;
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit * .5;
   font-style: italic;
-  
+
   > :last-child {
     margin-bottom: 0;
   }
-  
+
   i, em {
     font-style: normal;
   }
@@ -128,7 +128,7 @@ code {
 pre {
   padding: 8px 12px;
   overflow-x: auto;
-  
+
   > code {
     border: 0;
     padding-right: 0;
@@ -138,10 +138,10 @@ pre {
 
 .highlight {
   @extend %vertical-rhythm;
-  
+
   border-radius: 3px;
   background: $code-background-color;
-  
+
   .highlighter-rouge & {
     background: $code-background-color;
   }
@@ -150,13 +150,13 @@ pre {
 // Wrapper
 .wrapper {
   @extend %clearfix;
-  
+
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit * .5;
   padding-left: $spacing-unit * .5;
-  
+
   @media screen and (min-width: $on-large) {
     max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     padding-right: $spacing-unit;
@@ -193,26 +193,26 @@ table {
   color: $table-text-color;
   border-collapse: collapse;
   border: 1px solid $table-border-color;
-  
+
   tr {
     &:nth-child(even) {
       background-color: $table-zebra-color;
     }
   }
-  
+
   th, td {
     padding: ($spacing-unit * 33.3333333333 * .01) ($spacing-unit * .5);
   }
-  
+
   th {
     background-color: $table-header-bg-color;
     border: 1px solid $table-header-border;
   }
-  
+
   td {
     border: 1px solid $table-border-color;
   }
-  
+
   @include media-query($on-laptop) {
     display: block;
     overflow-x: auto;
