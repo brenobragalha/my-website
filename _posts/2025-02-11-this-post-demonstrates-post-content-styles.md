@@ -114,3 +114,8 @@ lorem | lorem ipsum | lorem ipsum dolor | lorem ipsum dolor sit
 lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet | lorem ipsum dolor sit
 lorem ipsum dolor | lorem ipsum | lorem | lorem ipsum
 lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur
+
+{% comment %}
+  Might you have an include? Why not try it here!
+  {% include theme.html %}
+{% endcomment %}

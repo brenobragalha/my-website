@@ -1,38 +1,15 @@
-# Build settings
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Site settings
 title: Breno Bragalha
 author:
   name: Breno Bragalha
   email: bragalhabreno.dev@icloud.com
 
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
 description: >-
   I'm an iOS Engineer passionate about the Apple ecosystem and Swift. I write articles, create high-quality apps and tools, and always focus on building great products.
 
-# If you want to link only specific pages in your header, use this and add the path to the pages in order as they should show up.
-header_pages:
-  - about.md
-
-# Set to `true` to show excerpts on the homepage.
-show_excerpts: true
-
-# The default value is "%b %d, %Y" (e.g. Nov 14, 2023)
-# Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-# date_format: "%b %d, %Y"
-
-# Social Media Links
-# Renders icons via Font Awesome Free webfonts CDN, based on ordered list of entries.
-#
-# Entry keys:
-# * title     Tooltip rendered on hovering over icon.
-# * icon      Font Awesome icon id. `github` corresponds to `fa-github`.
-# * url       Full URL of social profile.
-# * icon_type Font Awesome icon type. `brands` corresponds to `fa-brands`.
 social_links:
   - title: GitHub
     icon: github
@@ -55,10 +32,11 @@ social_links:
     url: "https://brenobragalha.github.io/feed.xml"
     icon_type: solid
 
-# Skins
-#
-# Entry keys:
-# * auto
-# * classic
-# * dark
+header_pages:
+  - about.md
+
 skin: auto
+show_excerpts: true
+paginate: 5
+# date_format: "%b %d, %Y"
+# Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.

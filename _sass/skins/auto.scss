@@ -6,7 +6,6 @@
 $color-scheme-auto: true !default;
 $color-scheme-dark: false !default;
 
-// Light mode
 $lm-brand-color:           #000000 !default;
 $lm-brand-color-light:     lighten($lm-brand-color, 90%) !default;
 $lm-brand-color-dark:      darken($lm-brand-color, 75%) !default;
@@ -99,7 +98,6 @@ $lm-icon-color: #666666 !default;
   }
 }
 
-// Dark mode
 $dm-brand-color:           #ffffff !default;
 $dm-brand-color-light:     lighten($dm-brand-color, 44%) !default;
 $dm-brand-color-dark:      darken($dm-brand-color, 74%) !default;
@@ -321,7 +319,6 @@ $icon-color: $lm-icon-color;
   $icon-color: var(--skin-icon-color);
 } @else if $color-scheme-dark {
 
-  // Dark (always dark mode)
   $brand-color: $dm-brand-color;
   $brand-color-light: $dm-brand-color-light;
   $brand-color-dark: $dm-brand-color-dark;
@@ -352,6 +349,5 @@ $icon-color: $lm-icon-color;
 
   @include dm-highlight;
 } @else {
-  // Classic syntax highlighting
   @include lm-highlight;
 }

@@ -1,4 +1,3 @@
-// Site header
 .site-header {
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
@@ -114,7 +113,6 @@
   }
 }
 
-// Site footer
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
@@ -189,7 +187,6 @@
   }
 }
 
-// Page content
 .page-content {
   padding: $spacing-unit 0;
   flex: 1 0 auto;
@@ -223,7 +220,6 @@
   display: block;
 }
 
-// Posts
 .post-header {
   margin-bottom: $spacing-unit;
 }
@@ -302,7 +298,6 @@
   }
 }
 
-// Pagination navbar
 .pagination {
   @extend .social-media-list;
 
